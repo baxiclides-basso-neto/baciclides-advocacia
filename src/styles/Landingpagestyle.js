@@ -1,8 +1,5 @@
 import styled from 'styled-components';
 
-export const HeaderContainer = styled.header`
-  /* Estilização do Header */
-`;
 
 export const MainContainer = styled.main`
   max-width: 1024px;

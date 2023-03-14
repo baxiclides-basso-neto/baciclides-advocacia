@@ -9,6 +9,10 @@ export const HeaderContainer = styled.header`
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 `;
 
+export const CallToAction = styled.button`
+  // estilos do botão
+`;
+
 export const Logo = styled.h1`
   font-size: 24px;
   color: #333333;

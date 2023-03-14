@@ -1,18 +1,20 @@
-import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import LandingPage from './components/LandingPage';
-import AboutPage from './components/AboutPage';
-import ContactPage from './components/ContactPage';
+import React from "react";
+import { Route, Routes } from "react-router-dom";
+import LandingPage from "./pages/landingpage/LandingPage";
+import AboutPage from "./pages/aboutpage/AboutPage";
+import ContactPage from "./pages/contactpage/ContactPage";
+import Header from "./components/Header/header";
 
 function App() {
   return (
-    <Router>
-      <Switch>
-        <Route exact path="/" component={LandingPage} />
-        <Route path="/sobre" component={AboutPage} />
-        <Route path="/contato" component={ContactPage} />
-      </Switch>
-    </Router>
+    <>
+      <Header />
+      <Routes>
+        <Route exact path="/" element={<LandingPage />} />
+        <Route path="/sobre" element={<AboutPage />} />
+        <Route path="/contato" element={<ContactPage />} />
+      </Routes>
+    </>
   );
 }
 

@@ -1,13 +1,10 @@
 import React from 'react'
-import { HeaderContainer, MainContainer, Title, Subtitle, Paragraph, CallToAction } from '../../styles/Headerstyle'
+import { MainContainer, Title, Subtitle, Paragraph, CallToAction } from '../../styles/Landingpagestyle'
 
-const Landingpage = () => {
+const LandingPage = () => {
   return (
     <>
     
-    <HeaderContainer>
-      {/* Incluir o componente Header aqui */}
-    </HeaderContainer>
     <MainContainer>
       <Title>Bem-vindo ao escritório de advocacia XYZ</Title>
       <Subtitle>Quem somos</Subtitle>
@@ -30,4 +27,4 @@ const Landingpage = () => {
   )
 }
 
-export default Landingpage
+export default LandingPage

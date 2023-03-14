@@ -1,5 +1,5 @@
 import React from 'react';
-import { HeaderContainer, Logo, Nav } from './style';
+import { HeaderContainer, Logo, Nav } from '../../styles/Headerstyle';
 
 function Header() {
     return (

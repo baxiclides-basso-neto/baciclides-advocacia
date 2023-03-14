@@ -9,7 +9,7 @@ export const BgImg = styled.div`
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 110%;
   z-index: -1;
   background-repeat: no-repeat;
   background-size: cover;
@@ -17,7 +17,7 @@ export const BgImg = styled.div`
 `;
 
 export const MainContainer = styled.main`
-  max-width: 1024px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 32px;
 `;

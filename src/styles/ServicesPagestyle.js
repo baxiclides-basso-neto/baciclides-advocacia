@@ -4,6 +4,8 @@ export const ServicosContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
 `;
 
 export const Card = styled.div`

@@ -17,9 +17,9 @@ import HorasExtrasImg from "../../assets/images/horasextras.jpg";
 
 const ServicesPage = () => {
   function handleWhatsAppClick() {
-    const phoneNumber = "5517991843732"; // Número de telefone do advogado (inclua o código do país)
+    const phoneNumber = "5517991843732";
     const message =
-      "Olá, gostaria de falar sobre os seus serviços de advocacia"; // Mensagem padrão para ser enviada
+      "Olá, gostaria de falar sobre os seus serviços de advocacia";
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
       message
     )}`;
@@ -36,7 +36,7 @@ const ServicesPage = () => {
             Não sabe quanto tempo falta para se aposentar?
           </CardDescription>
           <CardButton onClick={handleWhatsAppClick}>
-          Fale com um Advogado
+            Fale com um Advogado
           </CardButton>
         </CardContent>
       </Card>
@@ -49,7 +49,7 @@ const ServicesPage = () => {
             Quer sabe se faz jus ao adicional de periculosidade?{" "}
           </CardDescription>
           <CardButton onClick={handleWhatsAppClick}>
-          Fale com um Advogado
+            Fale com um Advogado
           </CardButton>
         </CardContent>
       </Card>
@@ -62,7 +62,7 @@ const ServicesPage = () => {
             Como entrar com uma ação trabalhista e reivindicar seus direitos.
           </CardDescription>
           <CardButton onClick={handleWhatsAppClick}>
-          Fale com um Advogado
+            Fale com um Advogado
           </CardButton>
         </CardContent>
       </Card>
@@ -76,19 +76,18 @@ const ServicesPage = () => {
             empresa?
           </CardDescription>
           <CardButton onClick={handleWhatsAppClick}>
-          Fale com um Advogado
+            Fale com um Advogado
           </CardButton>
         </CardContent>
       </Card>
 
       <Card>
-        <CardImage
-          src={SalarioPorForaImg}
-          alt="SalarioPorFora"
-        />
+        <CardImage src={SalarioPorForaImg} alt="SalarioPorFora" />
         <CardContent>
           <CardTitle>Salário por fora</CardTitle>
-          <CardDescription>Recebo salário por fora. Quais os meus direitos?</CardDescription>
+          <CardDescription>
+            Recebo salário por fora. Quais os meus direitos?
+          </CardDescription>
           <CardButton onClick={handleWhatsAppClick}>
             Fale com um Advogado
           </CardButton>
@@ -96,15 +95,14 @@ const ServicesPage = () => {
       </Card>
 
       <Card>
-        <CardImage
-          src={HorasExtrasImg}
-          alt="Imagem 6"
-        />
+        <CardImage src={HorasExtrasImg} alt="Imagem 6" />
         <CardContent>
           <CardTitle>Horas Extras</CardTitle>
-          <CardDescription>Você faz horas extras e não está recebendo por elas?</CardDescription>
+          <CardDescription>
+            Você faz horas extras e não está recebendo por elas?
+          </CardDescription>
           <CardButton onClick={handleWhatsAppClick}>
-          Fale com um Advogado
+            Fale com um Advogado
           </CardButton>
         </CardContent>
       </Card>

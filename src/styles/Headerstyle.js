@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const HeaderContainer = styled.header`
   border-radius: 4px;
-  background-color: #ffffff;
+  background-color: #f8f9fa;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 `;
 

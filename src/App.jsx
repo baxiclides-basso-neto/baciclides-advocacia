@@ -5,6 +5,7 @@ import AboutPage from "./pages/aboutpage/AboutPage";
 import ContactPage from "./pages/contactpage/ContactPage";
 import Header from "./components/Header/header";
 import ServicesPage from "./pages/servicespage/ServicesPage";
+import Footer from "./components/footer/Footer";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/servicos" element={<ServicesPage />} />
         <Route path="/contato" element={<ContactPage />} />
       </Routes>
+      <Footer />
     </>
   );
 }

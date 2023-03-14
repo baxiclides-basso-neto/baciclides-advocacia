@@ -35,7 +35,7 @@ export const Subtitle = styled.h3`
 export const Paragraph = styled.p`
   font-size: 18px;
   line-height: 1.5;
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
 `;
 
 export const CallToAction = styled(Link)`
@@ -46,6 +46,7 @@ export const CallToAction = styled(Link)`
   color: #ffffff;
   font-size: 18px;
   text-decoration: none;
+  margin-top: 2rem;
   cursor: pointer;
   transition: background-color 0.3s ease-in-out;
 

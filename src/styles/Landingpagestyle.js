@@ -1,5 +1,20 @@
-import styled from 'styled-components';
+import { Link } from "react-router-dom";
+import styled from "styled-components";
+import BgImgPic from "../assets/images/bgimg.avif";
 
+export const BgImg = styled.div`
+  background-image: url(${BgImgPic});
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+`;
 
 export const MainContainer = styled.main`
   max-width: 1024px;
@@ -23,17 +38,18 @@ export const Paragraph = styled.p`
   margin-bottom: 16px;
 `;
 
-export const CallToAction = styled.a`
+export const CallToAction = styled(Link)`
   display: inline-block;
   padding: 16px 32px;
   border-radius: 4px;
-  background-color: #0088CC;
-  color: #FFFFFF;
+  background-color: #8bc34a;
+  color: #ffffff;
   font-size: 18px;
   text-decoration: none;
-  transition: background-color 0.2s ease-in-out;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
 
   &:hover {
-    background-color: #005999;
+    background-color: #689f38;
   }
 `;

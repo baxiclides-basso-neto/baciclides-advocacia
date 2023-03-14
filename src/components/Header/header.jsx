@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 function Header() {
   return (
     <HeaderContainer>
-      <Logo>Nome do escritório de advocacia</Logo>
+      <Logo>Baciclides Basso Junior - Sociedade Individual de Advocacia</Logo>
       <Nav>
         <ul>
           <li><Link to="/">Página inicial</Link></li>

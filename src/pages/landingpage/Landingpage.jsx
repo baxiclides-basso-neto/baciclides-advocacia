@@ -6,7 +6,7 @@ const LandingPage = () => {
     <>
     
     <MainContainer>
-      <Title>Bem-vindo ao escritório de advocacia XYZ</Title>
+      <Title>Baciclides Basso Jr - Sociedade Individual de Advocacia</Title>
       <Subtitle>Quem somos</Subtitle>
       <Paragraph>
         Somos um escritório de advocacia especializado em direito empresarial e trabalhista. Com anos de experiência e uma equipe de advogados qualificados, estamos prontos para ajudar você e sua empresa em todas as questões jurídicas.

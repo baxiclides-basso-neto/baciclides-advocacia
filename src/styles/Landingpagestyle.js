@@ -1,25 +1,11 @@
-import { Link } from "react-router-dom";
 import styled from "styled-components";
-import BgImgPic from "../assets/images/bgimg.avif";
-
-export const BgImg = styled.div`
-  background-image: url(${BgImgPic});
-  opacity: 0.5;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 110%;
-  z-index: -1;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-`;
+import { Link } from "react-router-dom";
 
 export const MainContainer = styled.main`
   max-width: 1200px;
   margin: 0 auto;
   padding: 32px;
+  color: #f5f5dc;
 `;
 
 export const Title = styled.h2`

@@ -1,11 +1,10 @@
 import styled from "styled-components";
 
 export const FooterWrapper = styled.footer`
-  margin-top: .8rem;
   border-top: 1px solid #dee2e6;
   padding: 15px;
   text-align: center;
-  
+  color: #fff;
 `;
 
 export const ContextWrapper = styled.div`
@@ -33,7 +32,7 @@ export const ContactText = styled.p`
 `;
 
 export const EmailLink = styled.a`
-  color: #212529;
+  color: #fff;
   text-decoration: none;
   margin-left: 5px;
 `;

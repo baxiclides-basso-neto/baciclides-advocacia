@@ -5,8 +5,9 @@ import {
   Subtitle,
   Paragraph,
   CallToAction,
-  BgImg,
-} from "../../styles/Landingpagestyle";
+  
+  
+} from "../../styles/LandingPagestyle";
 
 const LandingPage = () => {
   function handleWhatsAppClickLandingPage() {
@@ -20,9 +21,7 @@ const LandingPage = () => {
   }
   return (
     <>
-      <BgImg>
-        <div className="background-image"></div>
-      </BgImg>
+  
       <MainContainer>
         <Title>Baciclides Basso Jr - Sociedade Individual de Advocacia</Title>
         <Subtitle>Quem somos</Subtitle>
@@ -55,6 +54,7 @@ const LandingPage = () => {
           Entre em contato
         </CallToAction>
       </MainContainer>
+  
     </>
   );
 };

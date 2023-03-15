@@ -28,8 +28,8 @@ export const CallToAction = styled(Link)`
   display: inline-block;
   padding: 16px 32px;
   border-radius: 4px;
-  background-color: #8bc34a;
-  color: #ffffff;
+  background-color: #c7c7a6;
+  color: #1c2331;
   font-size: 18px;
   text-decoration: none;
   margin-top: 2rem;
@@ -37,6 +37,6 @@ export const CallToAction = styled(Link)`
   transition: background-color 0.3s ease-in-out;
 
   &:hover {
-    background-color: #689f38;
+    background-color: #fdfdc5;
   }
 `;

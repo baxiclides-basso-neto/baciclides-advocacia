@@ -11,7 +11,7 @@ function Header() {
   return (
     <HeaderContainer>
       <ContextContainer>
-        <Logo>Baciclides Basso Junior - Sociedade Individual de Advocacia</Logo>
+        <Logo>Logotipo do escritório</Logo>
         <Nav>
           <ul>
             <li>

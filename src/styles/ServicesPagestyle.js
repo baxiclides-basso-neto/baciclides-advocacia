@@ -47,11 +47,13 @@ export const CardTitle = styled.h3`
   font-size: 20px;
   margin-bottom: 10px;
   margin-top: 5px;
+  color: #fff;
 `;
 
 export const CardDescription = styled.p`
   font-size: 16px;
-  color: #666;
+  color: #f8f8f8;
+  padding: 5px;
 `;
 
 export const CardButton = styled.button`
@@ -59,14 +61,14 @@ export const CardButton = styled.button`
   padding: 0.5rem 1rem;
   border: none;
   border-radius: 0.5rem;
-  background-color: #8bc34a;
-  color: #fff;
+  background-color: #c7c7a6;
+  color: #1c2331;
   font-size: 1rem;
   font-weight: 500;
   cursor: pointer;
   transition: background-color 0.3s ease-in-out;
 
   &:hover {
-    background-color: #689f38;
+    background-color: #fdfdc5;
   }
 `;

@@ -44,6 +44,7 @@ export const Nav = styled.nav`
   ul {
     display: flex;
     list-style: none;
+    gap: 1rem;
   }
 
   li {
@@ -53,12 +54,17 @@ export const Nav = styled.nav`
   a {
     font-size: 18px;
     color: #f5f5dc;
+    padding: 4px;
 
     text-decoration: none;
-    transition: color 0.2s ease-in-out;
+    transition: background-color 0.5s ease-in-out;
+
 
     &:hover {
-      color: #0088cc;
+      color: #1c2331;
+      background-color:  #fdfdc5;
+      border-radius: 4px;
+      
     }
   }
 

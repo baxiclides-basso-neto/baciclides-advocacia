@@ -54,12 +54,13 @@ export const CallToAction = styled(Link)`
 export const ServicosContainer = styled.div`
   display: flex;
   flex-direction: column;
+  margin-bottom: 2rem;
 `;
 
 export const Card = styled.div`
   width: 300px;
   height: 300px;
-
+  margin-top: .5rem;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);

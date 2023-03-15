@@ -7,17 +7,20 @@ import {
   FooterText,
   PhoneNumber,
   ContextWrapper,
+  FooterTextBox,
 } from "../../styles/Footerstyle";
 
 function Footer() {
   return (
     <FooterWrapper>
       <ContextWrapper>
+        <FooterTextBox>
         <FooterText>
           Direitos Autorais © 2023 - Todos os direitos reservados.
         </FooterText>
+        </FooterTextBox>
         <ContactInfo>
-          <ContactText>Contatos:</ContactText>
+          
           <ContactText>
             <EmailLink href="mailto:contato@exemplo.com">
               contato@exemplo.com

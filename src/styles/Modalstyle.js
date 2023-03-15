@@ -14,7 +14,6 @@ export const ModalContainer = styled.div`
   justify-content: center;
   align-items: center;
   margin: 0 1rem;
-
 `;
 
 export const ModalContent = styled.div`
@@ -24,6 +23,12 @@ export const ModalContent = styled.div`
   max-height: 80%;
   overflow-y: auto;
   position: relative;
+
+  @media(min-width: 769px){
+    max-width: 70%;
+    max-height: 70%;
+  }
+
 `;
 
 export const Btn = styled.button`

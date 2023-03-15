@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   MainContainer,
   Title,
@@ -6,12 +6,20 @@ import {
   Paragraph,
   CallToAction,
   ServicesList,
-  ServicosContainer, 
-  Card, CardButton, CardContent, CardDescription, CardImage, CardTitle
+  ServicosContainer,
+  Card,
+  CardButton,
+  CardContent,
+  CardDescription,
+  CardImage,
+  CardTitle,
 } from "../../styles/LandingPagestyle";
 import IA from "../../assets/images/inteligencia-artificial.jpg";
+import Modal from "../../components/modal/ModalLandingPage";
 
 const LandingPage = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   function handleWhatsAppClickLandingPage() {
     const phoneNumber = "5517991843732";
     const message =
@@ -21,6 +29,7 @@ const LandingPage = () => {
     )}`;
     window.open(url, "_blank");
   }
+
   return (
     <>
       <MainContainer>
@@ -56,20 +65,26 @@ const LandingPage = () => {
         </CallToAction>
         <ServicosContainer>
           <h2>Artigos</h2>
-        <Card>
-          <CardImage src={IA} alt="Aposentadoria" />
-          <CardContent>
-            <CardTitle>Inteligências Artificiais e o Direito no Brasil</CardTitle>
-            <CardDescription>
-              Como a IA é usada on setor jurídico no Brasil?
-            </CardDescription>
-            <CardButton>
-              Saiba mais
-            </CardButton>
-          </CardContent>
-        </Card>
+          <Card>
+            <CardImage src={IA} alt="Aposentadoria" />
+            <CardContent>
+              <CardTitle>
+                Inteligências Artificiais e o Direito no Brasil
+              </CardTitle>
+              <CardDescription>
+                Como a IA é usada no setor jurídico no Brasil?
+              </CardDescription>
+              <CardButton onClick={() => setIsModalOpen(true)}>
+                Saiba mais
+              </CardButton>
+            </CardContent>
+          </Card>
         </ServicosContainer>
       </MainContainer>
+              <Modal
+                isOpen={isModalOpen}
+                onClose={() => setIsModalOpen(false)}
+              />
     </>
   );
 };

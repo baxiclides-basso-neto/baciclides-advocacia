@@ -6,7 +6,10 @@ import {
   Paragraph,
   CallToAction,
   ServicesList,
+  ServicosContainer, 
+  Card, CardButton, CardContent, CardDescription, CardImage, CardTitle
 } from "../../styles/LandingPagestyle";
+import IA from "../../assets/images/inteligencia-artificial.jpg";
 
 const LandingPage = () => {
   function handleWhatsAppClickLandingPage() {
@@ -51,6 +54,21 @@ const LandingPage = () => {
         <CallToAction onClick={handleWhatsAppClickLandingPage}>
           Entre em contato
         </CallToAction>
+        <ServicosContainer>
+          <h2>Artigos</h2>
+        <Card>
+          <CardImage src={IA} alt="Aposentadoria" />
+          <CardContent>
+            <CardTitle>Inteligências Artificiais e o Direito no Brasil</CardTitle>
+            <CardDescription>
+              Como a IA é usada on setor jurídico no Brasil?
+            </CardDescription>
+            <CardButton>
+              Saiba mais
+            </CardButton>
+          </CardContent>
+        </Card>
+        </ServicosContainer>
       </MainContainer>
     </>
   );

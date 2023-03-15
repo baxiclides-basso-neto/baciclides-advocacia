@@ -36,6 +36,7 @@ export const Nav = styled.nav`
     display: flex;
     list-style: none;
     gap: 1rem;
+    margin-right: 1rem;
   }
 
   a {
@@ -54,7 +55,7 @@ export const Nav = styled.nav`
 
   @media (max-width: 768px) {
     li {
-      margin-right: 1rem;
+      margin-right: 1.5rem;
     }
 
     a {

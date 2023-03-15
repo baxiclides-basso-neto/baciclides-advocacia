@@ -4,8 +4,11 @@ import { Link } from "react-router-dom";
 export const MainContainer = styled.main`
   max-width: 1200px;
   margin: 0 auto;
-  padding: 32px;
+  padding: 20px;
   color: #f5f5dc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 `;
 
 export const Title = styled.h2`
@@ -15,7 +18,7 @@ export const Title = styled.h2`
 
 export const Subtitle = styled.h3`
   font-size: 24px;
-  margin-bottom: 16px;
+  margin-bottom: 0.5rem;
 `;
 
 export const Paragraph = styled.p`
@@ -24,8 +27,14 @@ export const Paragraph = styled.p`
   margin-bottom: 1rem;
 `;
 
+export const ServicesList = styled.ul`
+  margin-top: 0;
+`;
+
 export const CallToAction = styled(Link)`
   display: inline-block;
+  max-width: 150px;
+  text-align: center;
   padding: 16px 32px;
   border-radius: 4px;
   background-color: #c7c7a6;

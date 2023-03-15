@@ -11,7 +11,9 @@ function Header() {
   return (
     <HeaderContainer>
       <ContextContainer>
-        <Logo>Logotipo do escritório</Logo>
+        <section>
+          <Logo>Logo</Logo>
+        </section>
         <Nav>
           <ul>
             <li>

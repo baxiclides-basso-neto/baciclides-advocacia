@@ -5,6 +5,7 @@ import {
   Subtitle,
   Paragraph,
   CallToAction,
+  ServicesList,
   
   
 } from "../../styles/LandingPagestyle";
@@ -36,7 +37,8 @@ const LandingPage = () => {
           Oferecemos uma ampla gama de serviços jurídicos para atender às
           necessidades de nossos clientes, incluindo:
         </Paragraph>
-        <ul>
+        <ServicesList>
+        
           <li>
             <Paragraph>Direito previdenciário</Paragraph>
           </li>
@@ -49,7 +51,8 @@ const LandingPage = () => {
           <li>
             <Paragraph>Resolução de conflitos</Paragraph>
           </li>
-        </ul>
+        
+        </ServicesList>
         <CallToAction onClick={handleWhatsAppClickLandingPage}>
           Entre em contato
         </CallToAction>

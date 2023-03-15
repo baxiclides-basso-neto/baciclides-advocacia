@@ -23,8 +23,9 @@ export const Subtitle = styled.h3`
 
 export const Paragraph = styled.p`
   font-size: 18px;
-  line-height: 1.5;
+  line-height: 150%;
   margin-bottom: 1rem;
+  text-align: justify;
 `;
 
 export const ServicesList = styled.ul`
@@ -41,7 +42,7 @@ export const CallToAction = styled(Link)`
   color: #1c2331;
   font-size: 18px;
   text-decoration: none;
-  margin-top: .5rem;
+  margin-top: 0.5rem;
   margin-bottom: 1.5rem;
   cursor: pointer;
   transition: background-color 0.3s ease-in-out;
@@ -60,7 +61,7 @@ export const ServicosContainer = styled.div`
 export const Card = styled.div`
   width: 300px;
   height: 300px;
-  margin-top: .5rem;
+  margin-top: 0.5rem;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
@@ -79,7 +80,7 @@ export const CardContent = styled.div`
 
 export const CardTitle = styled.h3`
   font-size: 20px;
-  margin-top: .2rem;
+  margin-top: 0.2rem;
 `;
 
 export const CardDescription = styled.p`
@@ -87,9 +88,7 @@ export const CardDescription = styled.p`
 `;
 
 export const CardButton = styled.button`
-
-  
-  padding: 0.5rem .5rem;
+  padding: 0.5rem 0.5rem;
   border: none;
   border-radius: 4px;
   background-color: #c7c7a6;

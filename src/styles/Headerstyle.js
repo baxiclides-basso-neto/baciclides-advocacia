@@ -11,7 +11,7 @@ export const ContextContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   border-radius: 4px;
-  padding: 16px;
+  padding: 8px;
   max-width: 1200px;
   margin: 0 auto;
 
@@ -19,7 +19,6 @@ export const ContextContainer = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 8px;
   }
 `;
 

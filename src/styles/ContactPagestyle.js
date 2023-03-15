@@ -4,6 +4,8 @@ export const ContactContainer = styled.div`
   max-width: 800px;
   margin: 0 auto;
   padding: 50px;
+  height: 100vh;
+  width: 100vw;
 `;
 
 export const ContactTitle = styled.h1`

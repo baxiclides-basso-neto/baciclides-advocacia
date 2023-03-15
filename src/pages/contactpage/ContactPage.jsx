@@ -1,5 +1,5 @@
 import React from 'react';
-import { ContactContainer, ContactTitle, ContactText, ContactForm, Description } from '../../styles/ContactPageStyle';
+import { ContactContainer, ContactTitle, ContactText, ContactForm, Description } from '../../styles/ContactPagestyle';
 
 function ContactPage() {
   return (

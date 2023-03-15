@@ -7,7 +7,6 @@ import {
   CardImage,
   CardTitle,
   CardButton,
-  BgServices,
 } from "../../styles/ServicesPagestyle";
 import AposentadoriaImg from "../../assets/images/aposentadoria.jpg";
 import PericulosidadeImg from "../../assets/images/periculosidade.png.webp";
@@ -29,7 +28,6 @@ const ServicesPage = () => {
 
   return (
     <>
-      <BgServices></BgServices>
       <ServicosContainer>
         <Card>
           <CardImage src={AposentadoriaImg} alt="Aposentadoria" />

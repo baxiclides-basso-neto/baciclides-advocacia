@@ -6,8 +6,6 @@ import {
   Paragraph,
   CallToAction,
   ServicesList,
-  
-  
 } from "../../styles/LandingPagestyle";
 
 const LandingPage = () => {
@@ -22,7 +20,6 @@ const LandingPage = () => {
   }
   return (
     <>
-  
       <MainContainer>
         <Title>Baciclides Basso Jr - Sociedade Individual de Advocacia</Title>
         <Subtitle>Quem somos</Subtitle>
@@ -38,7 +35,6 @@ const LandingPage = () => {
           necessidades de nossos clientes, incluindo:
         </Paragraph>
         <ServicesList>
-        
           <li>
             <Paragraph>Direito previdenciário</Paragraph>
           </li>
@@ -51,13 +47,11 @@ const LandingPage = () => {
           <li>
             <Paragraph>Resolução de conflitos</Paragraph>
           </li>
-        
         </ServicesList>
         <CallToAction onClick={handleWhatsAppClickLandingPage}>
           Entre em contato
         </CallToAction>
       </MainContainer>
-  
     </>
   );
 };

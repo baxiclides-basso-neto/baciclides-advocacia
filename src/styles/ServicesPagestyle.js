@@ -1,19 +1,4 @@
 import styled from "styled-components";
-import BgServicesImg from "../assets/images/bgservices.avif";
-
-export const BgServices = styled.div`
-  background-image: url(${BgServicesImg});
-  opacity: 0.5;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: -1;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-`;
 
 export const ServicosContainer = styled.div`
   display: flex;

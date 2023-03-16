@@ -6,7 +6,10 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   height: 100vh;
-  width: 100vw;
+
+  max-width: 1200px;
+  margin: 0 auto;
+
 `;
 
 export const Title = styled.h1`
@@ -21,7 +24,7 @@ export const Description = styled.p`
   font-size: auto;
   text-align: center;
   line-height: 150%;
-  max-width: 90%;
+  width: 85%;
   text-align: justify;
 
   @media (min-width: 769px) {

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   ContactContainer,
   ContactTitle,
@@ -7,9 +7,17 @@ import {
   Description,
   InputContact,
   ContactBox,
+  TextAreaContact,
+  BtnContact,
 } from "../../styles/ContactPagestyle";
 
 function ContactPage() {
+  const [isFocused, setIsFocused] = useState();
+
+  const handleFocus = () => {
+    setIsFocused(true);
+  };
+  
   return (
     <ContactContainer>
       <ContactTitle>Entre em contato conosco</ContactTitle>
@@ -25,17 +33,22 @@ function ContactPage() {
         Preencha o formulário abaixo e entraremos em contato o mais breve
         possível.
       </ContactText>
-      <h3>Contato</h3>
 
       <ContactBox>
         <ContactForm>
           <InputContact type="text" placeholder="Digite o seu nome" />
           <InputContact type="text" placeholder="Digite o seu e-mail" />
-
-          <textarea name="" id="" cols="30" rows="10">
-            Digite a sua mensagem
-          </textarea>
-          <button>Enviar</button>
+          <TextAreaContact
+            onFocus={handleFocus} /* adiciona o handler onFocus */
+            onBlur={() =>
+              setIsFocused(false)
+            } /* adiciona o handler onBlur para quando o textarea perde o foco */
+            isFocused={
+              isFocused
+            } /* passa o estado como propriedade para o styled component */
+            placeholder="Digite sua mensagem aqui..."
+          />
+          <BtnContact>Enviar</BtnContact>
         </ContactForm>
       </ContactBox>
     </ContactContainer>

@@ -42,6 +42,7 @@ export const Nav = styled.nav`
   a {
     font-size: 18px;
     color: #f5f5dc;
+    margin-left: 2rem ;
 
     text-decoration: none;
     transition: background-color 0.5s ease-in-out;
@@ -56,8 +57,9 @@ export const Nav = styled.nav`
   @media (max-width: 768px) {
     li {
       margin-right: 1.5rem;
+    
     }
-
+    
     a {
       font-size: 16px;
     }

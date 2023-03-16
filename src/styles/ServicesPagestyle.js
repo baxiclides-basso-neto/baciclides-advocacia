@@ -19,10 +19,11 @@ export const Card = styled.div`
   transition: transform 0.2s ease-in-out;
 `;
 
-export const CardImage = styled.img`
+export const CardImage = styled.div`
   width: 100%;
   height: 50%;
-  object-fit: cover;
+  background-image: url(${(props) => props.image});
+  background-size: cover;
 `;
 
 export const CardContent = styled.div`

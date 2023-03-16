@@ -10,14 +10,20 @@ import {
   TextAreaContact,
   BtnContact,
 } from "../../styles/ContactPagestyle";
+import { useForm } from "react-hook-form";
 
 function ContactPage() {
   const [isFocused, setIsFocused] = useState();
 
+  const {register, handleSubmit} = useForm()
+
+
   const handleFocus = () => {
     setIsFocused(true);
   };
+
   
+
   return (
     <ContactContainer>
       <ContactTitle>Entre em contato conosco</ContactTitle>
@@ -35,9 +41,9 @@ function ContactPage() {
       </ContactText>
 
       <ContactBox>
-        <ContactForm>
-          <InputContact type="text" placeholder="Digite o seu nome" />
-          <InputContact type="text" placeholder="Digite o seu e-mail" />
+        <ContactForm onSubmit={handleSubmit} >
+          <InputContact type="text" placeholder="Digite o seu nome" {...register('nome')} required />
+          <InputContact type="text" placeholder="Digite o seu e-mail" {...register('email')} required />
           <TextAreaContact
             onFocus={handleFocus} /* adiciona o handler onFocus */
             onBlur={() =>
@@ -48,7 +54,7 @@ function ContactPage() {
             } /* passa o estado como propriedade para o styled component */
             placeholder="Digite sua mensagem aqui..."
           />
-          <BtnContact>Enviar</BtnContact>
+          <BtnContact type="submit" >Enviar</BtnContact>
         </ContactForm>
       </ContactBox>
     </ContactContainer>

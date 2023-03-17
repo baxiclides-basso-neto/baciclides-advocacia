@@ -11,18 +11,22 @@ import {
   BtnContact,
 } from "../../styles/ContactPagestyle";
 import { useForm } from "react-hook-form";
+import { toast } from "react-toastify";
 
 function ContactPage() {
   const [isFocused, setIsFocused] = useState();
 
-  const {register, handleSubmit} = useForm()
-
+  const { register, handleSubmit, reset } = useForm();
 
   const handleFocus = () => {
     setIsFocused(true);
   };
 
-  
+  const onSubmitForm = () => {
+    toast.success("Mensagem enviada com sucesso!");
+    console.log("teste");
+    reset()
+  };
 
   return (
     <ContactContainer>
@@ -41,9 +45,19 @@ function ContactPage() {
       </ContactText>
 
       <ContactBox>
-        <ContactForm onSubmit={handleSubmit} >
-          <InputContact type="text" placeholder="Digite o seu nome" {...register('nome')} required />
-          <InputContact type="text" placeholder="Digite o seu e-mail" {...register('email')} required />
+        <ContactForm onSubmit={handleSubmit(onSubmitForm)}>
+          <InputContact
+            type="text"
+            placeholder="Digite o seu nome"
+            {...register("nome")}
+            required
+          />
+          <InputContact
+            type="text"
+            placeholder="Digite o seu e-mail"
+            {...register("email")}
+            required
+          />
           <TextAreaContact
             onFocus={handleFocus} /* adiciona o handler onFocus */
             onBlur={() =>
@@ -53,8 +67,9 @@ function ContactPage() {
               isFocused
             } /* passa o estado como propriedade para o styled component */
             placeholder="Digite sua mensagem aqui..."
+            required
           />
-          <BtnContact type="submit" >Enviar</BtnContact>
+          <BtnContact type="submit">Enviar</BtnContact>
         </ContactForm>
       </ContactBox>
     </ContactContainer>

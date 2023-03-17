@@ -1,7 +1,7 @@
 <div align="center" id="top"> 
   <img src="./.github/app.gif" alt="Baciclides Advocacia" />
 
-  &#xa0;
+&#xa0;
 
   <!-- <a href="https://baciclidesadvocacia.netlify.app">Demo</a> -->
 </div>
@@ -26,12 +26,6 @@
 
 <!-- Status -->
 
-<h4 align="center"> 
-	🚧  Baciclides Advocacia 🚀 Under construction...  🚧
-</h4> 
-
-<hr> 
-
 <p align="center">
   <a href="#dart-about">About</a> &#xa0; | &#xa0; 
   <a href="#sparkles-features">Features</a> &#xa0; | &#xa0;
@@ -44,7 +38,7 @@
 
 <br>
 
-## :dart: About ##
+## :dart: About
 
 Este é um projeto de uma aplicação React para um escritório de advocacia, onde os clientes podem entrar em contato com os advogados por e-mail, WhatsApp e formulário. Além disso, a aplicação permite que os clientes conheçam um pouco da história do escritório, confiram alguns dos serviços oferecidos e leiam artigos jurídicos.
 
@@ -54,13 +48,13 @@ Esta aplicação é ideal para escritórios de advocacia que desejam fornecer um
 
 Sinta-se à vontade para contribuir com melhorias ou novas funcionalidades para este projeto.
 
-## :sparkles: Features ##
+## :sparkles: Features
 
 :heavy_check_mark: Contato com os advogados por meio de e-mail, WhatsApp e formulário de contato;
 :heavy_check_mark: Páginas de serviços que o escritório presta;
 :heavy_check_mark: Artigos jurídicos
 
-## :rocket: Technologies ##
+## :rocket: Technologies
 
 The following tools were used in this project:
 
@@ -72,12 +66,11 @@ The following tools were used in this project:
 - [React-modal](https://www.npmjs.com/package/react-modal)
 - [React-router-dom](https://www.npmjs.com/package/react-router-dom)
 
-
-## :white_check_mark: Requirements ##
+## :white_check_mark: Requirements
 
 Before starting :checkered_flag:, you need to have [Git](https://git-scm.com) and [Node](https://nodejs.org/en/) installed.
 
-## :checkered_flag: Starting ##
+## :checkered_flag: Starting
 
 ```bash
 # Clone this project
@@ -95,10 +88,9 @@ $ yarn start
 # The server will initialize in the <http://localhost:3000>
 ```
 
-## :memo: License ##
+## :memo: License
 
 This project is under license from MIT. For more details, see the [LICENSE](license) file.
-
 
 Made with :heart: by <a href="https://github.com/baxiclides-basso-neto" target="_blank">Baxiclides Basso Neto</a>
 

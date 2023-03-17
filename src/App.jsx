@@ -8,7 +8,7 @@ import Header from "./components/header/Header";
 import ServicesPage from "./pages/servicespage/ServicesPage";
 import Footer from "./components/footer/Footer";
 import Wrapper from "./components/Wrapper/Wrapper";
-import { ToastContainer } from "react-toastify";
+
 import "react-toastify/dist/ReactToastify.css";
 
 function App() {
@@ -24,18 +24,7 @@ function App() {
         </Routes>
         <Footer />
       </Wrapper>
-      <ToastContainer
-        position="top-center"
-        autoClose={2000}
-        hideProgressBar={false}
-        newestOnTop={false}
-        closeOnClick
-        rtl={false}
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover
-        theme="light"
-      />
+    
     </>
   );
 }

@@ -13,6 +13,7 @@ import {
 import { useForm } from "react-hook-form";
 import { toast } from "react-toastify";
 import { send } from "emailjs-com";
+import { StyledContainer } from "../../styles/ContactPagestyle";
 
 function ContactPage() {
   const [isFocused, setIsFocused] = useState();
@@ -48,7 +49,7 @@ function ContactPage() {
   }
 
   return (
-    <ContactContainer>
+    <><ContactContainer>
       <ContactTitle>Entre em contato conosco</ContactTitle>
       <Description>
         Entre em contato conosco e esclareça suas dúvidas sobre questões
@@ -62,37 +63,40 @@ function ContactPage() {
         Preencha o formulário abaixo e entraremos em contato o mais breve
         possível.
       </ContactText>
-
       <ContactBox>
         <ContactForm onSubmit={handleSubmit(onSubmitForm)}>
           <InputContact
             type="text"
             placeholder="Digite o seu nome"
             {...register("name")}
-            required
-          />
+            required />
           <InputContact
             type="text"
             placeholder="Digite o seu e-mail"
             {...register("email")}
-            required
-          />
+            required />
           <TextAreaContact
             onFocus={handleFocus} /* adiciona o handler onFocus */
-            onBlur={() =>
-              setIsFocused(false)
-            } /* adiciona o handler onBlur para quando o textarea perde o foco */
-            isFocused={
-              isFocused
-            } /* passa o estado como propriedade para o styled component */
+            onBlur={() => setIsFocused(false)} /* adiciona o handler onBlur para quando o textarea perde o foco */
+            isFocused={isFocused} /* passa o estado como propriedade para o styled component */
             placeholder="Digite sua mensagem aqui..."
             {...register("message")}
-            required
-          />
+            required />
           <BtnContact type="submit">Enviar</BtnContact>
         </ContactForm>
       </ContactBox>
     </ContactContainer>
+    <StyledContainer
+        position="top-center"
+        autoClose={2000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light" /></>
   );
 }
 

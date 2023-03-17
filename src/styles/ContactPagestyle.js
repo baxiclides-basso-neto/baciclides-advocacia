@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { ToastContainer } from "react-toastify";
 
 export const ContactContainer = styled.div`
   color: #f5f5dc;
@@ -112,3 +113,9 @@ export const BtnContact = styled.button`
     background-color: #fdfdc5;
   }
 `;
+export const StyledContainer = styled(ToastContainer)`
+  .Toastify__progress-bar {
+    background-color: #c7c7a6;
+  }
+`;
+

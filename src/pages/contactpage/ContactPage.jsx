@@ -12,21 +12,40 @@ import {
 } from "../../styles/ContactPagestyle";
 import { useForm } from "react-hook-form";
 import { toast } from "react-toastify";
+import { send } from "emailjs-com";
 
 function ContactPage() {
   const [isFocused, setIsFocused] = useState();
-
   const { register, handleSubmit, reset } = useForm();
 
   const handleFocus = () => {
     setIsFocused(true);
   };
 
-  const onSubmitForm = () => {
-    toast.success("Mensagem enviada com sucesso!");
-    console.log("teste");
-    reset()
+  const onSubmitForm = async (data) => {
+    await sendEmail(data);
   };
+
+  async function sendEmail(data) {
+    try {
+      const templateParams = {
+        from_name: data.name,
+        message: data.message,
+        email: data.email,
+      };
+      await send(
+        "service_ey9xrlo",
+        "template_oembkg5",
+        templateParams,
+        "UK3LUCDcldJIda31B"
+      );
+      toast.success("Mensagem enviada com sucesso!");
+      reset();
+    } catch (e) {
+      console.error(e);
+      toast.error("Ocorreu um erro ao enviar a mensagem.");
+    }
+  }
 
   return (
     <ContactContainer>
@@ -49,7 +68,7 @@ function ContactPage() {
           <InputContact
             type="text"
             placeholder="Digite o seu nome"
-            {...register("nome")}
+            {...register("name")}
             required
           />
           <InputContact
@@ -67,6 +86,7 @@ function ContactPage() {
               isFocused
             } /* passa o estado como propriedade para o styled component */
             placeholder="Digite sua mensagem aqui..."
+            {...register("message")}
             required
           />
           <BtnContact type="submit">Enviar</BtnContact>

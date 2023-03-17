@@ -65,6 +65,7 @@ The following tools were used in this project:
 - [React-icons](https://www.npmjs.com/package/react-icons)
 - [React-modal](https://www.npmjs.com/package/react-modal)
 - [React-router-dom](https://www.npmjs.com/package/react-router-dom)
+- [EmailJS](https://www.emailjs.com/)
 
 ## :white_check_mark: Requirements
 
